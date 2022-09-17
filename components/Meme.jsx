@@ -32,6 +32,7 @@ export default function Meme() {
     }
 
     return (
+      <div className="container">
         <main>
             <div className="form">
                 <input
@@ -41,7 +42,7 @@ export default function Meme() {
                     name="topText"
                     value={meme.topText}
                     onChange={handleChange}
-                />
+                    />
                 <input
                     type="text"
                     placeholder="Bottom text"
@@ -49,11 +50,11 @@ export default function Meme() {
                     name="bottomText"
                     value={meme.bottomText}
                     onChange={handleChange}
-                />
+                    />
                 <button
                     className="form--button"
                     onClick={getMemeImage}
-                >
+                    >
                     Get a new meme image 🖼
                 </button>
             </div>
@@ -63,5 +64,6 @@ export default function Meme() {
                 <h2 className="meme--text bottom">{meme.bottomText}</h2>
             </div>
         </main>
+      </div>
     )
 }

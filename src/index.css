@@ -7,6 +7,11 @@ body {
   margin: 0;
 }
 
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
 main {
   padding: 36px;
 }
@@ -14,10 +19,9 @@ main {
 .header {
   display: flex;
   align-items: center;
-  height: 65px;
+  height: 60px;
   background: #20232A;
   color: white;
-  padding: 20px;
 }
 
 .header--title {
@@ -50,6 +54,7 @@ main {
   color: white;
   border: none;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .meme {
